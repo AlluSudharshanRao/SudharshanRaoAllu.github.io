@@ -9,7 +9,7 @@
       var open = navLinks.classList.toggle('is-open');
       toggle.setAttribute('aria-expanded', open);
     });
-    navLinks.querySelectorAll('a').forEach(function(a) {
+    navLinks.querySelectorAll('a[href^="#"]').forEach(function(a) {
       a.addEventListener('click', function() {
         navLinks.classList.remove('is-open');
         toggle.setAttribute('aria-expanded', 'false');

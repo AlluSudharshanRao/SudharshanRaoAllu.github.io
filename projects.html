@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Sudharshan Rao Allu</title>
+  <meta name="description" content="Projects — ML systems, RAG, backend. Sudharshan Rao Allu.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-projects">
+  <header class="site-header" id="header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">SRA</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section page-head">
+      <div class="container">
+        <h1 class="page-title">Projects</h1>
+        <p class="section-intro">ML systems, backend services, and research-related work.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="project-cards">
+          <article class="project-card featured" id="mlops">
+            <h3>Real-Time Recommendation System with MLOps</h3>
+            <p class="project-meta">Sep 2025 – Dec 2025</p>
+            <p class="project-desc">Complete <strong>ML pipeline</strong>: data ingestion, feature engineering, model training, evaluation, and inference. Experimentation and hyperparameter tuning improved model performance (R² from -0.26 to 0.28). <strong>MLflow</strong> and <strong>DVC</strong> for experiment and model version tracking and reproducible training workflows. Trained models deployed as REST APIs with <strong>FastAPI</strong> and <strong>Docker</strong> for scalable inference.</p>
+            <ul class="project-skills">
+              <li>MLflow</li>
+              <li>DVC</li>
+              <li>FastAPI</li>
+              <li>Docker</li>
+            </ul>
+          </article>
+          <article class="project-card featured" id="rag">
+            <h3>RAG-Powered Document Assistant (Smart RAG)</h3>
+            <p class="project-meta">Sep 2025 – Dec 2025</p>
+            <p class="project-desc">A production-ready RAG system for Q&A over documents. Supports <strong>PDF, DOCX, TXT, MD</strong> with batch uploads and configurable chunking. Uses ChromaDB for vector search and hybrid retrieval (semantic + BM25) for 10–20% retrieval accuracy gain. Features multi-turn conversational Q&A, source citations, document collections, and an analytics dashboard (query performance, relevance, response times). Built with LangChain, Streamlit, and Docker; deployed on Streamlit Cloud with optional OpenAI or local Sentence Transformers embeddings.</p>
+            <p class="project-links">
+              <a href="https://github.com/AlluSudharshanRao/smart-rag-assistant" target="_blank" rel="noopener noreferrer">Code</a>
+              <a href="https://smart-rag-assistant.streamlit.app/" target="_blank" rel="noopener noreferrer">Live demo</a>
+            </p>
+            <ul class="project-skills">
+              <li>LangChain</li>
+              <li>ChromaDB</li>
+              <li>Streamlit</li>
+              <li>Docker</li>
+            </ul>
+          </article>
+          <article class="project-card" id="auth-api">
+            <h3>Authentication API with JWT</h3>
+            <p class="project-desc">Django-based user authentication system with JWT for secure web application access. Implements <strong>user registration, login, password reset, and profile management</strong> via RESTful APIs. All endpoints tested with Postman. Uses Django REST Framework and token-based auth for stateless, scalable auth flows.</p>
+            <p class="project-links">
+              <a href="https://github.com/AlluSudharshanRao/Authentication-API-with-JWT" target="_blank" rel="noopener noreferrer">Code</a>
+            </p>
+            <ul class="project-skills">
+              <li>Django REST Framework</li>
+            </ul>
+          </article>
+          <article class="project-card">
+            <h3>Chatroom Application</h3>
+            <p class="project-desc">Real-time multi-client chatroom using <strong>Python socket programming</strong> and TCP/IP. The server listens for incoming connections, manages multiple clients, and routes messages between participants. Implements a clear server–client architecture with robust error handling and exception management for reliable operation.</p>
+            <p class="project-links">
+              <a href="https://github.com/AlluSudharshanRao/Chat-Application" target="_blank" rel="noopener noreferrer">Code</a>
+            </p>
+            <ul class="project-skills">
+              <li>Computer Networking</li>
+              <li>Python</li>
+            </ul>
+          </article>
+          <article class="project-card">
+            <h3>End-to-End Machine Learning Project</h3>
+            <p class="project-desc">End-to-end ML project for <strong>student performance prediction</strong>: data ingestion, transformation, model training, logging, and custom exception handling. Multiple machine learning models were trained and compared; the best-performing model was selected through experimentation and hyperparameter tuning. Structured for reproducibility and production-style workflows.</p>
+            <p class="project-links">
+              <a href="https://github.com/AlluSudharshanRao/mlproject" target="_blank" rel="noopener noreferrer">Code</a>
+            </p>
+            <ul class="project-skills">
+              <li>Python</li>
+              <li>Scikit-Learn</li>
+              <li>Pandas</li>
+              <li>NumPy</li>
+            </ul>
+          </article>
+          <article class="project-card" id="ids">
+            <h3>Transfer Learning and CNN-Based IDS</h3>
+            <p class="project-meta">Feb 2024 – Apr 2024</p>
+            <p class="project-desc">Transfer and ensemble learning-based <strong>Intrusion Detection System (IDS)</strong> for Internet of Vehicles (IoV). Reimplemented and validated a published framework using CNN ensembles; applied transfer learning with <strong>VGG, Inception, and Xception</strong> architectures. Achieved up to <strong>99.9% F1-score</strong> on public benchmark datasets (Car-Hacking, CICIDS2017).</p>
+            <ul class="project-skills">
+              <li>Deep Learning</li>
+              <li>Transfer Learning</li>
+              <li>PyTorch</li>
+            </ul>
+          </article>
+          <article class="project-card">
+            <h3>Job Management Portal</h3>
+            <p class="project-desc">Full-stack <strong>Django job portal</strong> connecting job seekers and recruiters. <strong>Job seekers</strong>: secure registration, profile management, resume upload, browse listings, apply for jobs, track application status. <strong>Recruiters</strong>: post jobs with detailed descriptions, manage applications. <strong>Email notifications</strong> (SMTP) for account creation, applications, and updates. Admin panel for users, jobs, and applications. Built with Django, MySQL, and Bootstrap.</p>
+            <p class="project-links">
+              <a href="https://github.com/AlluSudharshanRao/Job-Portal-Management" target="_blank" rel="noopener noreferrer">Code</a>
+            </p>
+            <ul class="project-skills">
+              <li>Django</li>
+              <li>MySQL</li>
+              <li>SMTP</li>
+            </ul>
+          </article>
+          <article class="project-card">
+            <h3>School Website</h3>
+            <p class="project-desc">Comprehensive <strong>Django school website</strong> with academic information, admission details, and account-related functionality for students, parents, and staff. Includes user-friendly navigation and seamless access to key information. Application containerized with <strong>Docker</strong> for portable deployment.</p>
+            <p class="project-links">
+              <a href="https://github.com/AlluSudharshanRao/School-Website" target="_blank" rel="noopener noreferrer">Code</a>
+            </p>
+            <ul class="project-skills">
+              <li>Django</li>
+              <li>MySQL</li>
+              <li>Docker</li>
+            </ul>
+          </article>
+          <article class="project-card">
+            <h3>WhatsApp Chat Analyzer</h3>
+            <p class="project-desc">Data analysis and visualization app for <strong>WhatsApp chat exports</strong>. Uses pandas for data cleaning and manipulation; matplotlib and seaborn for visualizations. Features include chat statistics, <strong>word clouds</strong>, message frequency patterns, and participant activity analysis. Built with Python and Streamlit for an interactive, user-friendly interface.</p>
+            <p class="project-links">
+              <a href="https://github.com/AlluSudharshanRao/WhatsApp_Chat_Analyser" target="_blank" rel="noopener noreferrer">Code</a>
+            </p>
+            <ul class="project-skills">
+              <li>Pandas</li>
+              <li>Streamlit</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Sudharshan Rao Allu. <a href="index.html">Back to home</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
